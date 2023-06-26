@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bootstrap Landing Page</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <style>
     /* Custom Styles */
     body {
@@ -79,6 +80,19 @@
       text-transform: uppercase;
       margin-top: 10px;
     }
+
+    .feature-icon {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .feature-image {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 
@@ -112,44 +126,39 @@
     </nav>
   </header>
 
-  <section class="section">
+  <section class="section" style="background-color: #f7f7f7;">
     <div class="container">
-      <div class="section-content">
-        <h2>Welcome to Our Landing Page</h2>
-        <p class="lead">We provide innovative solutions for your business</p>
+      <div class="section-heading">
+        <h2>Our Services</h2>
       </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="section-content">
-        <div class="section-heading">
-          <h2>Our Services</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <i class="fas fa-laptop-code feature-icon"></i>
+              <h3>Web Development</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis ante eget quam aliquet
+                posuere.</p>
+            </div>
+          </div>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <h3>Service 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <i class="fas fa-mobile-alt feature-icon"></i>
+              <h3>Mobile App Development</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis ante eget quam aliquet
+                posuere.</p>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <h3>Service 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <h3>Service 3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <i class="fas fa-database feature-icon"></i>
+              <h3>Database Management</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis ante eget quam aliquet
+                posuere.</p>
             </div>
           </div>
         </div>
@@ -161,28 +170,47 @@
     <div class="container">
       <div class="section-content">
         <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus fringilla mi, eget volutpat ipsum
-          pharetra sit amet.</p>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="https://via.placeholder.com/500x350" class="feature-image" alt="About Us Image">
+          </div>
+          <div class="col-md-6">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis ante eget quam aliquet posuere.
+              Mauris
+              sit amet neque vel orci blandit maximus. Curabitur eget mi non nunc cursus mattis at nec quam. Proin
+              pulvinar
+              vestibulum arcu ut auctor.</p>
+            <p>Phasellus consectetur libero a ipsum maximus sollicitudin. Donec placerat lectus eu elementum
+              vulputate.
+              Nullam dapibus cursus enim vitae cursus. Nulla facilisi. Integer non neque sit amet elit tincidunt
+              gravida.
+              Pellentesque eu arcu quis nibh fringilla posuere. Curabitur congue nunc id elit bibendum, at vestibulum
+              tortor
+              pellentesque. Sed ac massa ut tellus eleifend tempus a sit amet nisi. Praesent fringilla lacus at
+              elementum
+              semper. Fusce placerat elementum sapien id condimentum.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" style="background-color: #f7f7f7;">
     <div class="container">
-      <div class="section-content">
-        <div class="section-heading">
-          <h2>Contact Us</h2>
-        </div>
-        <div class="contact-form">
-          <form>
+      <div class="section-heading">
+        <h2>Contact Us</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <form class="contact-form">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Your Name">
+              <input type="text" class="form-control" placeholder="Name">
             </div>
             <div class="form-group">
-              <input type="email" class="form-control" placeholder="Your Email">
+              <input type="email" class="form-control" placeholder="Email">
             </div>
             <div class="form-group">
-              <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+              <textarea class="form-control" rows="5" placeholder="Message"></textarea>
             </div>
             <button type="submit" class="btn btn-primary btn-block">Send Message</button>
           </form>
@@ -193,35 +221,13 @@
 
   <footer class="footer">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="logo"></div>
-          <div class="logo-text">Your Logo</div>
-        </div>
-        <div class="col-md-6">
-          <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <p>&copy; 2023 Your Company. All Rights Reserved.</p>
     </div>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
-
